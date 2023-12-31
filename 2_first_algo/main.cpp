@@ -103,8 +103,8 @@ template <typename T> constexpr T mult_acc5(T r, T n, T a) {
   for (;;) {
     if (is_odd(n)) {
       r = r + a;
-      if (n == 1) { // NB this is different from the book. I think this is
-        return r;   // a bug in the book
+      if (n == 1) {
+        return r;
       }
     }
     n = half(n);
